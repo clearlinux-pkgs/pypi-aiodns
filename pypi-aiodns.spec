@@ -4,13 +4,12 @@
 #
 Name     : pypi-aiodns
 Version  : 3.0.0
-Release  : 5
+Release  : 6
 URL      : https://files.pythonhosted.org/packages/27/79/df72e25df0fdd9bf5a5ab068539731d27c5f2ae5654621ae0c92ceca94cf/aiodns-3.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/27/79/df72e25df0fdd9bf5a5ab068539731d27c5f2ae5654621ae0c92ceca94cf/aiodns-3.0.0.tar.gz
 Summary  : Simple DNS resolver for asyncio
 Group    : Development/Tools
 License  : MIT
-Requires: pypi-aiodns-filemap = %{version}-%{release}
 Requires: pypi-aiodns-license = %{version}-%{release}
 Requires: pypi-aiodns-python = %{version}-%{release}
 Requires: pypi-aiodns-python3 = %{version}-%{release}
@@ -20,14 +19,6 @@ BuildRequires : pypi(pycares)
 %description
 Simple DNS resolver for asyncio
         ===============================
-
-%package filemap
-Summary: filemap components for the pypi-aiodns package.
-Group: Default
-
-%description filemap
-filemap components for the pypi-aiodns package.
-
 
 %package license
 Summary: license components for the pypi-aiodns package.
@@ -49,7 +40,6 @@ python components for the pypi-aiodns package.
 %package python3
 Summary: python3 components for the pypi-aiodns package.
 Group: Default
-Requires: pypi-aiodns-filemap = %{version}-%{release}
 Requires: python3-core
 Provides: pypi(aiodns)
 Requires: pypi(pycares)
@@ -70,7 +60,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1652992181
+export SOURCE_DATE_EPOCH=1652994116
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -112,10 +102,6 @@ popd
 
 %files
 %defattr(-,root,root,-)
-
-%files filemap
-%defattr(-,root,root,-)
-/usr/share/clear/filemap/filemap-pypi-aiodns
 
 %files license
 %defattr(0644,root,root,0755)
