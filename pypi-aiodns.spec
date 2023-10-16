@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-aiodns
-Version  : 3.1.0
-Release  : 20
-URL      : https://files.pythonhosted.org/packages/e5/70/f9aa5346bb56b9de897ee0ad03e4d94e76731886df59e73218e024c257d6/aiodns-3.1.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/e5/70/f9aa5346bb56b9de897ee0ad03e4d94e76731886df59e73218e024c257d6/aiodns-3.1.0.tar.gz
+Version  : 3.1.1
+Release  : 21
+URL      : https://files.pythonhosted.org/packages/fa/10/4de99e6e67703d8f6b10ea92a4d2a6c5b96a9c0708b75389a00203387925/aiodns-3.1.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/fa/10/4de99e6e67703d8f6b10ea92a4d2a6c5b96a9c0708b75389a00203387925/aiodns-3.1.1.tar.gz
 Summary  : Simple DNS resolver for asyncio
 Group    : Development/Tools
 License  : MIT
@@ -53,10 +53,10 @@ python3 components for the pypi-aiodns package.
 
 
 %prep
-%setup -q -n aiodns-3.1.0
-cd %{_builddir}/aiodns-3.1.0
+%setup -q -n aiodns-3.1.1
+cd %{_builddir}/aiodns-3.1.1
 pushd ..
-cp -a aiodns-3.1.0 buildavx2
+cp -a aiodns-3.1.1 buildavx2
 popd
 
 %build
@@ -64,7 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1696863137
+export SOURCE_DATE_EPOCH=1697469593
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
