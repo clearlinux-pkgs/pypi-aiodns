@@ -7,7 +7,7 @@
 #
 Name     : pypi-aiodns
 Version  : 3.1.1
-Release  : 22
+Release  : 23
 URL      : https://files.pythonhosted.org/packages/fa/10/4de99e6e67703d8f6b10ea92a4d2a6c5b96a9c0708b75389a00203387925/aiodns-3.1.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/fa/10/4de99e6e67703d8f6b10ea92a4d2a6c5b96a9c0708b75389a00203387925/aiodns-3.1.1.tar.gz
 Summary  : Simple DNS resolver for asyncio
