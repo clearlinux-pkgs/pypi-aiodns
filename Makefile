@@ -1,5 +1,5 @@
 PKG_NAME := pypi-aiodns
-URL = https://files.pythonhosted.org/packages/fa/10/4de99e6e67703d8f6b10ea92a4d2a6c5b96a9c0708b75389a00203387925/aiodns-3.1.1.tar.gz
+URL = https://files.pythonhosted.org/packages/e7/84/41a6a2765abc124563f5380e76b9b24118977729e25a84112f8dfb2b33dc/aiodns-3.2.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
